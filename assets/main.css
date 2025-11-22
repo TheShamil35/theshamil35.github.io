@@ -1,0 +1,140 @@
+/* Basic reset and typography */
+:root {
+  --accent: #0b84ff;
+  --muted: #6b7280;
+  --bg: #ffffff;
+  --surface: #f8fafc;
+}
+
+* {
+  box-sizing: border-box
+}
+
+html,
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  color: #111827;
+  background: var(--bg);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.25rem
+}
+
+/* Header */
+.site-header {
+  position: sticky;
+  top: 0px;
+  background: var(--surface);
+  border-bottom: 1px solid #e6edf3
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 0
+}
+
+.site-brand {
+  font-weight: 700;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 1.125rem
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem
+}
+
+.main-nav a {
+  color: var(--muted);
+  text-decoration: none;
+  padding: 0.35rem 0.5rem;
+  border-radius: 6px
+}
+
+.main-nav a:hover {
+  color: var(--accent);
+  background: rgba(11, 132, 255, 0.06)
+}
+
+/* Page / post styles */
+.page-wrapper,
+.post-wrapper {
+  padding: 2rem 0
+}
+
+.post-title,
+.page-header h1 {
+  font-size: 1.75rem;
+  margin: 0 0 0.25rem
+}
+
+.post-meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-bottom: 1rem
+}
+
+.post-content-inner p {
+  margin: 0 0 1rem
+}
+
+/* Custom box example */
+.custom-box {
+  background: #f1f7ff;
+  border: 1px solid #dbeeff;
+  padding: 1rem;
+  border-radius: 8px;
+  height: 500px;
+}
+
+/* Footer */
+.site-footer {
+  background: #0b1220;
+  color: #fff;
+  padding: 0;
+  margin-top: auto
+}
+
+.footer-inner {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: space-between
+}
+
+.site-footer a {
+  color: #dbeafe
+}
+
+/* Responsive */
+@media (max-width:640px) {
+  .wrapper {
+    padding: 1rem
+  }
+
+  .footer-inner {
+    flex-direction: column
+  }
+
+  .main-nav ul {
+    gap: 0.5rem
+  }
+}

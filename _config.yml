@@ -25,12 +25,11 @@ description: >- # this means to ignore newlines until "baseurl:"
   Join me as I explore new ideas, projects, and experiences in the ever-evolving landscape of technology.
   Stay tuned for regular updates and feel free to connect with me!
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "theshamil35.app" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://theshamil35.app" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: theshamil35
 github_username:  theshamil35
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
 

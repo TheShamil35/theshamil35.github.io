@@ -1,0 +1,14 @@
+<footer class="site-footer">
+  <div class="wrapper footer-inner">
+    <div class="contact">
+      <h3>{{ site.title }}</h3>
+      <p>Email: <a href="mailto:{{ site.email | default: 'shamil.valiyev35@gmail.com' }}">{{ site.email | default: 'shamil.valiyev35@gmail.com' }}</a></p>
+      <p>GitHub: <a href="{{ site.github | default: 'https://github.com/theshamil35' }}">{{ site.github | default: 'theshamil35' }}</a></p>
+      <p>Twitter: <a href="{{ site.twitter | default: 'https://twitter.com/theshamil35' }}">@{{ site.twitter_username | default: 'theshamil35' }}</a></p>
+    </div>
+
+    <div class="footer-credit">
+      <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
+    </div>
+  </div>
+</footer>
