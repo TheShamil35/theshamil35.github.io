@@ -11,4 +11,3 @@ title: Home
   <h2>My Custom Section</h2>
   <p>This is a custom-styled div in Jekyll!</p>
 </div>
-
