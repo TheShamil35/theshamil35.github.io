@@ -10,13 +10,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  {% include header.html %} 
+  <div class="site-overlay">
+    {% include header.html %} 
 
-  <div class  ="site-body">
-    {{ content }}
+    <div class  ="site-body">
+      {{ content }}
+    </div>
+    
+    {% include footer.html %}
   </div>
-
-  {% include footer.html %}
   <script src="/scripts/main.js"></script>
 </body>
 </html>
