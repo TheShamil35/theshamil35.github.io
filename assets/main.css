@@ -336,6 +336,8 @@ body {
   background: #333;
 }
 
+
+
 @media (max-width: 640px) {
   .wrapper {
     padding: 1rem;
