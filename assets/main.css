@@ -29,6 +29,7 @@
   --muted: #6b7280;
   --bg: #ffffff;
   --surface: #f8fafc;
+  --linktext: #3d6cb7;
 }
 
 * {
@@ -150,7 +151,7 @@ body {
 
 /* Footer */
 .site-footer {
-  background: rgba(0, 0, 0, 0.09);
+  background: rgba(0, 0, 0, 0.06);
   color: #525252;
   padding: 0;
 }
@@ -166,9 +167,12 @@ body {
   margin: 0;
   padding: 0;
 }
-
-.site-footer a {
-  color: #dbeafe;
+.footer-credit a {
+  text-decoration: none;
+  color: var(--linktext);
+}
+.footer-credit a:hover {
+  text-decoration: underline;
 }
 
 /* Utilities and small components */
@@ -190,6 +194,16 @@ body {
 }
 
 /* About page */
+
+
+.about-body{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem; 
+}
+
+
 .about-grid {
   display: grid;
   grid-template-columns: 220px 1fr;
@@ -293,6 +307,10 @@ body {
   border-radius: 8px;
 }
 
+.project-card:nth-of-type(even){
+  flex-direction: row-reverse;
+}
+
 .project-card {
   background: #fff;
   border: 1px solid #e6edf3;
@@ -362,8 +380,11 @@ body {
   .project-card {
     padding: 1rem;
     flex-direction: column;
-
   }
+  .project-card:nth-of-type(even){
+    flex-direction: column;
+  }
+
   .project-card img {
     width: 100%;
     height: auto;
